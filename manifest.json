@@ -5,9 +5,9 @@
   "description": "Embed external bot alongside Intercom",
   "permissions": ["activeTab", "scripting"],
   "icons": {
-  "16": "bot-icon.png",
-  "48": "bot-icon.png",
-  "128": "bot-icon.png"
+  "16": "images.png",
+  "48": "images.png",
+  "128": "images.png"
 },
   "content_scripts": [
     {
