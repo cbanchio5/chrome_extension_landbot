@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #007bff;
+  background: #ff00d0;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -10,6 +10,7 @@
   font-size: 14px;
   cursor: pointer;
   z-index: 9999;
+  user-select: none; /* prevent text selection */
 }
 
 #my-bot-container {
@@ -23,6 +24,7 @@
   z-index: 9999;
   display: flex;
   flex-direction: column;
+  background: white;
 }
 
 #my-bot-frame {
@@ -41,4 +43,5 @@
   padding: 4px 10px;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
+  user-select: none;
 }
