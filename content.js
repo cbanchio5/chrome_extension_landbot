@@ -1,17 +1,32 @@
 const button = document.createElement('button');
-button.innerText = "💬 Chat with Bot";
+button.innerText = "💬 Landbot Asistant";
 button.id = "my-bot-launcher";
 document.body.appendChild(button);
 
 button.onclick = () => {
-  const existingFrame = document.getElementById('my-bot-frame');
-  if (existingFrame) {
-    existingFrame.remove(); // Toggle off if already open
+  const existingContainer = document.getElementById('my-bot-container');
+  if (existingContainer) {
+    existingContainer.remove(); // Toggle off
     return;
   }
+
+  // Container for iframe and close button
+  const container = document.createElement('div');
+  container.id = 'my-bot-container';
 
   const iframe = document.createElement('iframe');
   iframe.src = "https://landbot.pro/v3/H-3051155-BJSUBH1E0B9G66J5/index.html"; // Replace with your bot link
   iframe.id = "my-bot-frame";
-  document.body.appendChild(iframe);
+
+  const closeBtn = document.createElement('button');
+  closeBtn.id = 'my-bot-close';
+  closeBtn.innerText = '✖';
+
+  closeBtn.onclick = () => {
+    container.remove();
+  };
+
+  container.appendChild(closeBtn);
+  container.appendChild(iframe);
+  document.body.appendChild(container);
 };
