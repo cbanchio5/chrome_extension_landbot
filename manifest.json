@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Landbot",
+  "version": "1.0",
+  "description": "Embed external bot alongside Intercom",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://landbot.pro/v3/H-3051155-BJSUBH1E0B9G66J5/index.html"],
+      "js": [],
+      "css": []
+    }
+  ]
+}
