@@ -126,10 +126,3 @@ button.onclick = () => {
 };
 
 
-
-<script SameSite="None; Secure"  type="module" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs"></script>
-<script type="module">
-  var myLandbot = new Landbot.Livechat({
-    configUrl: '',
-  });
-</script>
